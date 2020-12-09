@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+cd "$(dirname "$0")"
+rm -rf checkpoints/ logs/ output/ __pycache__/
