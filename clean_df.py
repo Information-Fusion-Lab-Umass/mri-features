@@ -3,8 +3,10 @@
 import pandas as pd
 
 def label2(label):
-    if label in ('LMCI', 'EMCI', 'SMC'):
+    if label in ('LMCI', 'EMCI'):
         return 'MCI'
+    if label == 'SMC':
+        return 'CN'
     return label
 
 def main():

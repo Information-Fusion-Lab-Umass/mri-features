@@ -32,10 +32,10 @@ def test_split():
         labels = []
 
         for idx, row in query.iterrows():
-            if row["label"] == "CN":
+            if row["label2"] == "CN":
                 count[0] += 1
                 labels.append(0)
-            elif row["label"] == "AD":
+            elif row["label2"] == "AD":
                 count[2] += 1
                 labels.append(1)
             else:
@@ -86,10 +86,10 @@ def get_patient_label(df_path):
         labels = []
 
         for idx, row in query.iterrows():
-            if row["label"] == "CN":
+            if row["label2"] == "CN":
                 count[0] += 1
                 labels.append(0)
-            elif row["label"] == "AD":
+            elif row["label2"] == "AD":
                 count[2] += 1
                 labels.append(1)
             else:
