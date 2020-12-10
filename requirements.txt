@@ -2,6 +2,7 @@ nibabel
 numpy
 pandas
 scikit-learn
+scipy
 -f https://download.pytorch.org/whl/torch_stable.html
 torch==1.7.0+cu110
 torchaudio===0.7.0
