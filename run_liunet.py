@@ -139,6 +139,7 @@ def output_path(input_path, output_dir, split_num):
     return os.path.join(visit_output_dir, 'features.pt')
 
 def main():
+    random.seed(0)
     np.random.seed(0)
     torch.manual_seed(0)
     #torch.set_deterministic(True)
